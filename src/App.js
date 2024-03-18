@@ -29,6 +29,7 @@ function App() {
     { nombre: 'Ana Lopez', descripcion: 'instructor' },
     { nombre: 'Danial Muñoz', descripcion: 'aprendiz' },
     { nombre: 'Diana Leon', descripcion: 'aprendiz' },
+    { nombre: 'isabel Gutierrez', descripcion: 'aprendiz' },
     { nombre: 'Sara hoyos', descripcion: 'aprendiz' },
     { nombre: 'Isabel Bastidas', descripcion: 'aprendiz' },
     { nombre: 'Felipe noguera', descripcion: 'aprendiz' },
@@ -65,6 +66,7 @@ function App() {
         totalElementos={totalElementos}
         filasPorPagina={filasPorPagina}
       />
+      <Tabla datos={busqueda ? datosFiltrados : datos} />
     </div>
   );
 }
